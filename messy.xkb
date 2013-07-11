@@ -1,0 +1,174 @@
+xkb_keymap {
+xkb_keycodes { include "evdev+aliases(qwerty)" };
+xkb_types { include "complete" };
+xkb_compatibility { include "basic+iso9995+xfree86+misc+level5" };
+xkb_symbols { include "us(basic)+pc(pc105)"
+  include "level3(win_switch)"
+  include "capslock(super)"
+  include "altwin(meta_alt)"
+  include "level5(ralt_switch)"
+  include "compose(menu)"
+  include "nbsp(level3n)"
+
+  name[Group1] = "US/ASCII";
+  name[Group2] = "Math";
+
+  key <RALT> {
+    actions=[SetGroup(group=2)]
+  };
+
+  // PgUpDown-less UK keyboard adaptaion
+  key <AD11> { [      Prior,     braceleft ] };
+  key <AD12> { [       Next,    braceright ] };
+  key <AC11> { [ apostrophe,   bracketleft ] };
+  key <BKSL> { [   quotedbl,  bracketright ] };
+  key <LSGT> { [  backslash,           bar ] };
+
+  key <ESC>  { [ Escape, asciitilde ] };
+  //key <I10>  { [ XF86AudioPrev         ] };
+  //key <I19>  { [ XF86AudioNext         ] };
+  //key <MUTE> { [ XF86AudioMute         ] };
+  //key <I22>  { [ XF86AudioPlay, XF86AudioPause ] };
+  //key <I24>  { [ XF86AudioStop, XF86Eject ] };
+  //key <VOL-> { [ XF86AudioLowerVolume  ] };
+  //key <VOL+> { [ XF86AudioRaiseVolume  ] };
+  //key <I12>  { [ XF86Start ] }; // fn espace
+  //key <I3B>  { [ XF86WebCam ] }; // fn v
+  //key <I72>  { [ F15 ] }; // wifi
+
+  // simplistic keypad
+  key <KP0> { [ KP_0 ] };
+  key <KP1> { [ KP_1 ] };
+  key <KP2> { [ KP_2 ] };
+  key <KP3> { [ KP_3 ] };
+  key <KP4> { [ KP_4 ] };
+  key <KP5> { [ KP_5 ] };
+  key <KP6> { [ KP_6 ] };
+  key <KP7> { [ KP_7 ] };
+  key <KP8> { [ KP_8 ] };
+  key <KP9> { [ KP_9 ] };
+  key <KPMU> { [ KP_Multiply ] };
+  key <KPDV> { [ KP_Divide ] };
+  key <KPAD> { type="CTRL+ALT", symbols[Group1]=[KP_Add, XF86_Next_VMode ]};
+  key <KPSU> { type="CTRL+ALT", symbols[Group1]=[KP_Subtract,XF86_Prev_VMode]};
+  key <KPDL> { [ KP_Decimal ] };
+
+//   key <KP01> { type="CTRL+ALT", symbols[Group1]=[F1,XF86_Switch_VT_1] };
+//   key <KP02> { type="CTRL+ALT", symbols[Group1]=[F2,XF86_Switch_VT_2] };
+//   key <KP03> { type="CTRL+ALT", symbols[Group1]=[F3,XF86_Switch_VT_3] };
+//   key <KP04> { type="CTRL+ALT", symbols[Group1]=[F4,XF86_Switch_VT_4] };
+//   key <KP05> { type="CTRL+ALT", symbols[Group1]=[F5,XF86_Switch_VT_5] };
+//   key <KP06> { type="CTRL+ALT", symbols[Group1]=[F6,XF86_Switch_VT_6] };
+
+
+  // Accented letters
+  key <AD01> { [ NoSymbol, NoSymbol, idiaeresis, Idiaeresis ] };
+  key <AD02> { [ NoSymbol, NoSymbol, icircumflex, Icircumflex ] };
+  key <AC01> { [ NoSymbol, NoSymbol, igrave, Igrave ] };
+  key <AC02> { [ NoSymbol, NoSymbol, iacute, Iacute ] };
+
+  key <AD03> { [ NoSymbol, NoSymbol, adiaeresis, Adiaeresis ] };
+  key <AD04> { [ NoSymbol, NoSymbol, acircumflex, Acircumflex ] };
+  key <AC03> { [ NoSymbol, NoSymbol, agrave, Agrave ] };
+  key <AC04> { [ NoSymbol, NoSymbol, aacute, Aacute ] };
+
+  key <AD05> { [ NoSymbol, NoSymbol, udiaeresis, Udiaeresis ] };
+  key <AD06> { [ NoSymbol, NoSymbol, ucircumflex, Ucircumflex ] };
+  key <AC05> { [ NoSymbol, NoSymbol, ugrave, Ugrave ] };
+  key <AC06> { [ NoSymbol, NoSymbol, uacute, Uacute ] };
+
+  key <AD07> { [ NoSymbol, NoSymbol, ediaeresis, Ediaeresis ] };
+  key <AD08> { [ NoSymbol, NoSymbol, ecircumflex, Ecircumflex ] };
+  key <AC07> { [ NoSymbol, NoSymbol, egrave, Egrave ] };
+  key <AC08> { [ NoSymbol, NoSymbol, eacute, Eacute ] };
+
+  key <AD09> { [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
+  key <AD10> { [ NoSymbol, NoSymbol, ocircumflex, Ocircumflex ] };
+  key <AC09> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
+  key <AC10> { [ NoSymbol, NoSymbol, oacute, Oacute ] };
+
+  // high row
+  key <TLDE> { [ NoSymbol, NoSymbol, dead_grave, dead_tilde ] };
+  key <AE01> { [ NoSymbol, NoSymbol, onesuperior, exclamdown ] };
+  key <AE02> { [ NoSymbol, NoSymbol, twosuperior ] };
+  key <AE03> { [ NoSymbol, NoSymbol, threesuperior ] };
+  // ...
+  key <AE10> { [ NoSymbol, NoSymbol, degree, mu ] };
+  key <AE11> { [ NoSymbol, NoSymbol, endash, emdash ] };
+
+  // right block
+  key <AD11> { [ NoSymbol, NoSymbol, guillemotleft, leftdoublequotemark ] };
+  key <AD12> { [ NoSymbol, NoSymbol, guillemotright, rightdoublequotemark ] };
+  key <AC11> { [ NoSymbol, NoSymbol, dead_acute, dead_diaeresis ] };
+  key <AC12> { [ NoSymbol, NoSymbol, dead_circumflex, NoSymbol ] };
+  // low row
+  key <AB01> { [ NoSymbol, NoSymbol, ssharp, U017F ] }; // U017F = s long
+  key <AB02> { [ NoSymbol, NoSymbol, multiply, U22C5 ] };
+  key <AB03> { [ NoSymbol, NoSymbol, ccedilla, Ccedilla ] };
+  key <AB04> { [ NoSymbol, NoSymbol, EuroSign, sterling ] };
+  key <AB05> { [ NoSymbol, NoSymbol, oe, OE ] };
+  key <AB06> { [ NoSymbol, NoSymbol, ntilde, Ntilde ] };
+  // AB07 = m is free
+  key <AB10> { [ NoSymbol, NoSymbol, division, questiondown ] };
+
+  // Greek letters
+  key <LatA> { [], [Greek_alpha, Greek_ALPHA, U2200, hebrew_aleph]};
+  key <LatB> { [], [Greek_beta, Greek_BETA, hebrew_beth, None] };
+  key <LatC> { [], [Greek_chi, Greek_CHI, None, U2102] };
+  key <LatD> { [], [Greek_delta, Greek_DELTA, partialderivative, nabla] };
+  key <LatE> { [], [Greek_epsilon, Greek_EPSILON, elementof, U2203] };
+  key <LatF> { [], [Greek_phi, Greek_PHI] };
+  key <LatG> { [], [Greek_gamma, Greek_GAMMA] };
+  key <LatH> { [], [Greek_theta, Greek_THETA] };
+  key <LatI> { [], [Greek_iota, Greek_IOTA] };
+  key <LatJ> { [], [Greek_finalsmallsigma] };
+  key <LatK> { [], [Greek_kappa, Greek_KAPPA] };
+  key <LatL> { [], [Greek_lambda, Greek_LAMBDA] };
+  key <LatM> { [], [Greek_mu, Greek_MU] };
+  key <LatN> { [], [Greek_nu, Greek_NU, None, U2115] };
+  key <LatP> { [], [Greek_pi, Greek_PI, U2118, U220F] };
+  key <LatQ> { [], [Greek_psi, Greek_PSI, None, U211A] };
+  key <LatR> { [], [Greek_rho, Greek_RHO, None, U211D] };
+  key <LatS> { [], [Greek_sigma, Greek_SIGMA, Greek_finalsmallsigma, U2211] };
+  key <LatT> { [], [Greek_tau, Greek_TAU] };
+  key <LatU> { [], [Greek_upsilon, Greek_UPSILON, union, intersection] };
+  key <LatV> { [], [U03D6, None, logicalor, logicaland] }; // alexandrine pi
+  key <LatW> { [], [Greek_omega, Greek_OMEGA] };
+  key <LatX> { [], [Greek_xi, Greek_XI, U2297, U2A02] };
+  key <LatY> { [], [Greek_eta, Greek_ETA] };
+  key <LatZ> { [], [Greek_zeta, Greek_ZETA, integral, U2124] };
+
+  // Superscripts, subscripts and fractions
+  key <AE01> { [], [onesubscript, onesuperior] };
+  key <AE02> { [], [twosubscript, twosuperior, onehalf, twofifths] };
+  key <AE03> { [], [threesubscript, threesuperior, onethird, twothirds] };
+  key <AE04> { [], [foursubscript, foursuperior, onequarter, threequarters] };
+  key <AE05> { [], [fivesubscript, fivesuperior, onefifth, fourfifths] };
+  key <AE06> { [], [sixsubscript, sixsuperior, onesixth, fivesixths] };
+  key <AE07> { [], [sevensubscript, sevensuperior, threeeighths, fiveeighths] };
+  key <AE08> { [], [eightsubscript, eightsuperior, oneeighth, seveneighths] };
+  key <AE09> { [], [ninesubscript, ninesuperior, threefifths] };
+  key <AE10> { [], [zerosubscript, zerosuperior, emptyset] };
+
+  // Other mathematical
+  key <TLDE> { [], [ notsign, approximate, None, infinity ]};
+  key <AD11> { [], [ botleftsqbracket, topleftsqbracket ] };
+  key <AD12> { [], [ botrightsqbracket, toprightsqbracket ] };
+  key <AB08> { [ NoSymbol, NoSymbol, lessthanequal, leftarrow ],
+               [ includedin, U21D0, leftanglebracket, ifonlyif ] };
+  key <AB09> { [ NoSymbol, NoSymbol, greaterthanequal, rightarrow ],
+               [ includes, implies, rightanglebracket, U21A6 ] };
+  key <AE11> { [ NoSymbol, NoSymbol, endash, emdash ],
+               [ identical, notidentical ] };
+  key <AE12> { [ NoSymbol, NoSymbol, notequal, plusminus ],
+               [ similarequal, U2295, approxeq, U2A01 ] };
+  key <LSGT> { [ NoSymbol, NoSymbol, U2223, U2016] };
+
+  // Shift: Shift_L, Shift_R (via pc105)
+  // Lock: Caps_Lock, ISO_Lock (via pc105)
+  // Control: Control_L, Control_R (via pc105)
+  // Mod1: Alt_L, Alt_R, Meta_L, Meta_R (via altwin(meta_alt))
+  // Mod4: Caps (via capslock(super))
+  // Mod5: ISO_Level3_Shift (via level3(win_switch))
+};
+};
