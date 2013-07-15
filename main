@@ -9,7 +9,7 @@ xkb_keymap {
     indicator "LED2" { groups = 2; };
   };
   xkb_symbols {
-    include "us(basic)+pc(pc105)+fraccents(level3)+math(basic):2" 
+    include "us(basic)+pc(pc105)+fraccents(level3)+laptop(page_hack)+math(basic):2" 
     include "level3(lwin_switch)"
     include "capslock(super)"
     include "altwin(meta_alt)"
