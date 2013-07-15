@@ -5,10 +5,6 @@ xkb_symbols "page_hack" {
   key <AD12> { [       Next,    braceright ] };
   key <AC11> { [ apostrophe,   bracketleft ] };
   key <BKSL> { [   quotedbl,  bracketright ] };
-};
-
-partial
-xkb_symbols "UK_LSGT" {
   key <LSGT> { [  backslash,           bar ] };
 };
 
