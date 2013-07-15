@@ -1,25 +1,33 @@
 xkb_keymap {
-  xkb_keycodes { include "evdev+aliases(qwerty)" };
+  xkb_keycodes { 
+    indicator 1 = "LED2";
+    include "evdev+aliases(qwerty)" 
+  };
   xkb_types { include "complete+level5" };
   xkb_compatibility { 
     include "basic+iso9995+xfree86+misc+level5" 
-//    indicator "LED2" { groups = 2; };
-//    interpret ISO_Next_Group { action = LockGroup(group=+1); };
+    indicator "LED2" { groups = 2; };
   };
   xkb_symbols {
     include "us(basic)+pc(pc105)+fraccents(level3)+math(basic):2" 
     include "level3(lwin_switch)"
     include "capslock(super)"
     include "altwin(meta_alt)"
-//  include "level5(ralt_switch)"
-//  include "compose(menu)"
     include "nbsp(level3n)"    
 
-    name[Group1] = "US/ASCII";
+    name[Group1] = "US/french accents";
     name[Group2] = "Math";
     
-    key <RALT> { 
-      actions=[SetGroup(group=2)]
+    key <RALT> {
+      type = "ONE_LEVEL",
+      symbols[Group1] = [ ISO_Next_Group ],
+      symbols[Group2] = [ ISO_Prev_Group ]
     };
+
+    key <MENU> {
+      type[Group1]="ONE_LEVEL",
+      symbols[Group1] = [ ISO_Level5_Shift ]
+    };
+    modifier_map Mod3 { ISO_Level5_Shift };
   };
 };
