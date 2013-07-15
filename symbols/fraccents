@@ -1,0 +1,63 @@
+xkb_symbols "level3" {
+  // Accented letters
+  key <AD01> { [ NoSymbol, NoSymbol, idiaeresis, Idiaeresis ] };
+  key <AD02> { [ NoSymbol, NoSymbol, icircumflex, Icircumflex ] };
+  key <AC01> { [ NoSymbol, NoSymbol, igrave, Igrave ] };
+  key <AC02> { [ NoSymbol, NoSymbol, iacute, Iacute ] };
+
+  key <AD03> { [ NoSymbol, NoSymbol, adiaeresis, Adiaeresis ] };
+  key <AD04> { [ NoSymbol, NoSymbol, acircumflex, Acircumflex ] };
+  key <AC03> { [ NoSymbol, NoSymbol, aacute, Aacute ] };
+  key <AC04> { [ NoSymbol, NoSymbol, agrave, Agrave ] };
+
+  key <AD05> { [ NoSymbol, NoSymbol, udiaeresis, Udiaeresis ] };
+  key <AD06> { [ NoSymbol, NoSymbol, ucircumflex, Ucircumflex ] };
+  key <AC05> { [ NoSymbol, NoSymbol, ugrave, Ugrave ] };
+  key <AC06> { [ NoSymbol, NoSymbol, uacute, Uacute ] };
+
+  key <AD07> { [ NoSymbol, NoSymbol, ecircumflex, Ecircumflex ] };
+  key <AD08> { [ NoSymbol, NoSymbol, ediaeresis, Ediaeresis ] };
+  key <AC07> { [ NoSymbol, NoSymbol, eacute, Eacute ] };
+  key <AC08> { [ NoSymbol, NoSymbol, egrave, Egrave ] };
+
+  key <AD09> { [ NoSymbol, NoSymbol, ocircumflex, Ocircumflex ] };
+  key <AD10> { [ NoSymbol, NoSymbol, odiaeresis, Odiaeresis ] };
+  key <AC09> { [ NoSymbol, NoSymbol, ograve, Ograve ] };
+  key <AC10> { [ NoSymbol, NoSymbol, oacute, Oacute ] };
+
+  // high row
+  key <TLDE> { [ NoSymbol, NoSymbol, dead_grave, dead_tilde ] };
+  key <AE01> { [ NoSymbol, NoSymbol, onesuperior, exclamdown ] };   // ¹, ¡
+  key <AE02> { [ NoSymbol, NoSymbol, twosuperior, copyright ] };    // ², © 
+  key <AE03> { [ NoSymbol, NoSymbol, musicalsharp, musicalflat ] }; // ♯, ♭
+  key <AE04> { [ NoSymbol, NoSymbol, EuroSign, section ] };         // €, §
+  key <AE05> { [ NoSymbol, NoSymbol, EuroSign, permille] };         // €, ‰
+  key <AE06> { [ NoSymbol, NoSymbol, caret, None] };                // ‸
+  key <AE07> { [ NoSymbol, NoSymbol, registered, trademark] };      // ®, ™
+  key <AE08> { [ NoSymbol, NoSymbol, dagger, None] };               // †
+  key <AE09> { [ NoSymbol, NoSymbol, None, None] };                 // 
+  key <AE10> { [ NoSymbol, NoSymbol, degree, mu ] };                // °, µ
+  key <AE11> { [ NoSymbol, NoSymbol, endash, emdash ] };            // –, —
+  key <AE12> { [ NoSymbol, NoSymbol, notequal, plusminus ] };       // ≠, ±
+
+  // right block
+  key <AD11> { [ NoSymbol, NoSymbol, guillemotleft, leftdoublequotemark ] };    // «, “
+  key <AD12> { [ NoSymbol, NoSymbol, guillemotright, rightdoublequotemark ] };  // ». ”
+  key <AC11> { [ NoSymbol, NoSymbol, dead_acute, dead_diaeresis ] };
+  key <AC12> { [ NoSymbol, NoSymbol, dead_circumflex, NoSymbol ] };
+  key <LSGT> { [ NoSymbol, NoSymbol, brokenbar, None] };                        // ¦
+  key <BKSL> { [ NoSymbol, NoSymbol, brokenbar, None] };                        // ¦
+
+  // low row
+  key <AB01> { [ NoSymbol, NoSymbol, ssharp, U017F ] };                 // ß, ſ
+  key <AB02> { [ NoSymbol, NoSymbol, multiply, periodcentered ] };      // ×, ⋅
+  key <AB03> { [ NoSymbol, NoSymbol, ccedilla, Ccedilla ] };            // ç, Ç
+  key <AB04> { [ NoSymbol, NoSymbol, radical, None] };                  // √
+  key <AB05> { [ NoSymbol, NoSymbol, oe, OE ] };                        // œ, Œ
+  key <AB06> { [ NoSymbol, NoSymbol, ntilde, Ntilde ] };                // ñ, Ñ
+  key <AB07> { [ NoSymbol, NoSymbol, ae, AE ] };                        // æ, Æ
+  key <AB08> { [ NoSymbol, NoSymbol, leftarrow, uparrow ] };            // ←, ↑
+  key <AB09> { [ NoSymbol, NoSymbol, rightarrow, downarrow ] };         // →, ↓
+  key <AB10> { [ NoSymbol, NoSymbol, division, questiondown ] };        // ÷, ¿
+
+};

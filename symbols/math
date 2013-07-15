@@ -1,0 +1,53 @@
+xkb_symbols "basic" {
+  // Greek letters
+  key <LatA> { [Greek_alpha, Greek_ALPHA, U2200, hebrew_aleph]};              // α, Α, ∀, א
+  key <LatB> { [Greek_beta, Greek_BETA, hebrew_beth, None] };                 // β, Β, ב,
+  key <LatC> { [Greek_chi, Greek_CHI, None, U2102] };                         // χ, Χ,  , ℂ
+  key <LatD> { [Greek_delta, Greek_DELTA, partialderivative, nabla] };        // δ, Δ, ∂, ∇
+  key <LatE> { [Greek_epsilon, elementof, U2203, notelementof] };             // ε, ∈, ∃, ∉
+  key <LatF> { [Greek_phi, Greek_PHI, function, U1D53D] };                    // φ, Φ, ƒ, 𝔽
+  key <LatG> { [Greek_gamma, Greek_GAMMA] };                                  // γ, Γ
+  key <LatH> { [Greek_eta, U210B, U210F, U210D] };                            // η, ℋ, ℏ, ℍ
+  key <LatI> { [Greek_iota, U2110] };                                         // ι, ℐ
+  key <LatJ> { [Greek_finalsmallsigma] };                                     // ς
+  key <LatK> { [Greek_kappa, Greek_KAPPA] };                                  // κ, Κ
+  key <LatL> { [Greek_lambda, Greek_LAMBDA, U2113] };                         // λ, Λ, ℓ
+  key <LatM> { [Greek_mu, Greek_MU] };                                        // μ, Μ
+  key <LatN> { [Greek_nu, Greek_NU, None, U2115] };                           // ν, Ν,  , ℕ
+  key <LatP> { [Greek_pi, Greek_PI, U2118, U220F] };                          // π, Π, ℘, ∏
+  key <LatQ> { [Greek_psi, Greek_PSI, None, U211A] };                         // ψ, Ψ,  , ℚ
+  key <LatR> { [Greek_rho, U211B, U2119, U211D] };                            // ρ, ℛ, ℙ, ℝ
+  key <LatS> { [Greek_sigma, Greek_SIGMA, Greek_finalsmallsigma, U2211] };    // σ, Σ, ς, ∑
+  key <LatT> { [Greek_tau, Greek_TAU] };                                      // τ, Τ
+  key <LatU> { [Greek_upsilon, Greek_UPSILON, union, intersection] };         // υ, Υ, ∪, ∩
+  key <LatV> { [U03D6, None, logicalor, logicaland] };                        // ϖ,  , ∨, ∧
+  key <LatW> { [Greek_omega, Greek_OMEGA, None, U2127] };                     // ω, Ω,  , ℧
+  key <LatX> { [Greek_xi, Greek_XI, U2297, U2A02] };                          // ξ, Ξ, ⊗, ⨂
+  key <LatY> { [Greek_theta, Greek_THETA, U2295, U2A01] };                    // θ, Θ, ⊕, ⨁
+  key <LatZ> { [Greek_zeta, Greek_ZETA, integral, U2124] };                   // ζ, Ζ, ∫, ℤ
+
+  // Superscripts, subscripts and fractions
+  key <AE01> { [onesubscript, onesuperior] };
+  key <AE02> { [twosubscript, twosuperior, onehalf, twofifths] };
+  key <AE03> { [threesubscript, threesuperior, onethird, twothirds] };
+  key <AE04> { [foursubscript, foursuperior, onequarter, threequarters] };
+  key <AE05> { [fivesubscript, fivesuperior, onefifth, fourfifths] };
+  key <AE06> { [sixsubscript, sixsuperior, onesixth, fivesixths] };
+  key <AE07> { [sevensubscript, sevensuperior, threeeighths, fiveeighths] };
+  key <AE08> { [eightsubscript, eightsuperior, oneeighth, seveneighths] };
+  key <AE09> { [ninesubscript, ninesuperior, threefifths] };
+  key <AE10> { [zerosubscript, zerosuperior, emptyset] };
+
+  // Other
+  key <TLDE> { [ notsign, approximate, None, infinity ]};                     // ¬, ∼,  , ∞
+  key <AD11> { [ botleftsqbracket, topleftsqbracket, leftanglebracket ] };    // ⎣, ⎡, 〈
+  key <AD12> { [ botrightsqbracket, toprightsqbracket, rightanglebracket ] }; // ⎤, ⎤, 〉
+  key <AB08> { [ lessthanequal, includedin, U21D0, ifonlyif ] };              // ≤, ⊂, ⇐, ⇔
+  key <AB09> { [ greaterthanequal, includes, implies, U21A6 ] };              // ≥, ⊃, ⇒, ↦
+  key <AE11> { [ identical, notidentical ] };                                 // ≡, ≢
+  key <AB10> { [ division, multiply, periodcentered ] };                      // ÷, ×, ·
+  key <AC11> { [ minutes, seconds ] };                                        // ′, "
+  key <AE12> { [ notequal, plusminus, similarequal, approxeq] };              // ≠, ±, ≃, ≈
+  key <LSGT> { [ U2223, U2016] };                                             // ∣, ‖
+  key <BKSL> { [ U2223, U2016] };                                             // ∣, ‖
+};
