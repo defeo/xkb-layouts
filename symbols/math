@@ -1,7 +1,7 @@
 xkb_symbols "basic" {
   // Greek letters
-  key <LatA> { [Greek_alpha, Greek_ALPHA, U2200, hebrew_aleph]};              // α, Α, ∀, א
-  key <LatB> { [Greek_beta, Greek_BETA, hebrew_beth, None] };                 // β, Β, ב,
+  key <LatA> { [Greek_alpha, Greek_ALPHA, U2200, U2135]};                     // α, Α, ∀, ℵ
+  key <LatB> { [Greek_beta, Greek_BETA, U2136, None] };                       // β, Β, ℶ,
   key <LatC> { [Greek_chi, Greek_CHI, None, U2102] };                         // χ, Χ,  , ℂ
   key <LatD> { [Greek_delta, Greek_DELTA, partialderivative, nabla] };        // δ, Δ, ∂, ∇
   key <LatE> { [Greek_epsilon, elementof, U2203, notelementof] };             // ε, ∈, ∃, ∉
