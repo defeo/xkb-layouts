@@ -1,11 +1,8 @@
 // PgUpDown-less UK keyboard adaptaion
 partial
 xkb_symbols "page_hack" {
-  key <AD11> { [      Prior,     braceleft ] };
-  key <AD12> { [       Next,    braceright ] };
-  key <AC11> { [ apostrophe,   bracketleft ] };
-  key <BKSL> { [   quotedbl,  bracketright ] };
-  key <LSGT> { [  backslash,           bar ] };
+  key <AD11> { [      Prior, Prior] };
+  key <AD12> { [       Next, Next ] };
 };
 
 // simplistic keypad
