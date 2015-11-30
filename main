@@ -10,7 +10,7 @@ xkb_keymap {
   };
   xkb_symbols {
     include "us(basic)+pc(pc105)+fraccents(level3)+laptop(page_hack)+math(basic):2" 
-    include "level3(lwin_switch)"
+    include "level3(menu_switch)+level3(lwin_switch)"
     include "capslock(super)"
     include "altwin(meta_alt)"
     include "nbsp(level3n)"    
@@ -24,10 +24,6 @@ xkb_keymap {
       symbols[Group2] = [ ISO_Prev_Group ]
     };
 
-    key <MENU> {
-      type[Group1]="ONE_LEVEL",
-      symbols[Group1] = [ ISO_Level5_Shift ]
-    };
     modifier_map Mod3 { ISO_Level5_Shift };
   };
 };
