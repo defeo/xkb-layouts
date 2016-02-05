@@ -5,7 +5,7 @@ xkb_symbols "basic" {
   key <LatC> { [Greek_chi, Greek_CHI, None, U2102] };                         // χ, Χ,  , ℂ
   key <LatD> { [Greek_delta, Greek_DELTA, partialderivative, nabla] };        // δ, Δ, ∂, ∇
   key <LatE> { [Greek_epsilon, elementof, U2203, notelementof] };             // ε, ∈, ∃, ∉
-  key <LatF> { [Greek_phi, Greek_PHI, function, U1D53D] };                    // φ, Φ, ƒ, 𝔽
+  key <LatF> { [Greek_phi, Greek_PHI, U03D5, U1D53D] };                       // φ, Φ, ϕ, 𝔽
   key <LatG> { [Greek_gamma, Greek_GAMMA] };                                  // γ, Γ
   key <LatH> { [Greek_eta, U210B, U210F, U210D] };                            // η, ℋ, ℏ, ℍ
   key <LatI> { [Greek_iota, U2110] };                                         // ι, ℐ
