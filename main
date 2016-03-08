@@ -10,7 +10,7 @@ xkb_keymap {
   };
   xkb_symbols {
     include "us(basic)+pc(pc105)+fraccents(level3)+laptop(page_hack)+math(basic):2" 
-    include "level3(menu_switch)+level3(lwin_switch)"
+    include "level3(menu_switch)+level3(lwin_switch)+level3(rwin_switch)"
     include "capslock(super)"
     include "altwin(meta_alt)"
     include "nbsp(level3n)"    
