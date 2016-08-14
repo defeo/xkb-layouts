@@ -44,7 +44,7 @@ xkb_symbols "basic" {
   key <AD12> { [ botrightsqbracket, toprightsqbracket, rightanglebracket ] }; // ⎤, ⎤, 〉
   key <AB08> { [ lessthanequal, includedin, U21D0, ifonlyif ] };              // ≤, ⊂, ⇐, ⇔
   key <AB09> { [ greaterthanequal, includes, implies, U21A6 ] };              // ≥, ⊃, ⇒, ↦
-  key <AE11> { [ identical, notidentical ] };                                 // ≡, ≢
+  key <AE11> { [ identical, notidentical, U2245, None] };                     // ≡, ≢, ≅
   key <AB10> { [ division, multiply, periodcentered, U2218] };                // ÷, ×, ·, ∘
   key <AC11> { [ minutes, seconds ] };                                        // ′, "
   key <AE12> { [ notequal, plusminus, similarequal, approxeq] };              // ≠, ±, ≃, ≈
