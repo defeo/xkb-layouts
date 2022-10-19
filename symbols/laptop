@@ -1,10 +1,3 @@
-// PgUpDown-less UK keyboard adaptaion
-partial
-xkb_symbols "page_hack" {
-  key <AD11> { [      Prior, Prior] };
-  key <AD12> { [       Next, Next ] };
-};
-
 // simplistic keypad
 partial
 xkb_symbols "keypad" {

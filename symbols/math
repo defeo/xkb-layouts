@@ -14,6 +14,7 @@ xkb_symbols "basic" {
   key <LatL> { [Greek_lambda, Greek_LAMBDA, U2113] };                         // λ, Λ, ℓ
   key <LatM> { [Greek_mu, Greek_MU] };                                        // μ, Μ
   key <LatN> { [Greek_nu, Greek_NU, None, U2115] };                           // ν, Ν,  , ℕ
+  key <LatO> { [Greek_omicron, Greek_OMICRON, UF5, UD5] };                    // ο, Ο, õ, Õ
   key <LatP> { [Greek_pi, Greek_PI, U2118, U220F] };                          // π, Π, ℘, ∏
   key <LatQ> { [Greek_psi, Greek_PSI, None, U211A] };                         // ψ, Ψ,  , ℚ
   key <LatR> { [Greek_rho, U211B, U2119, U211D] };                            // ρ, ℛ, ℙ, ℝ
